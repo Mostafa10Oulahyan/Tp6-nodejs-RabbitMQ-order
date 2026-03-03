@@ -47,7 +47,9 @@ app.post("/orders", async (req, res) => {
         res.status(500).json({ error: "Erreur serveur" });
     }
 });
-
+app.get("/",(req,res)=>{
+    res.send("good job")
+})
 initRabbit().then(() => {
     app.listen(3000, () => console.log("🚀 orders-api running on http://localhost:3000"));
 }).catch((e) => {
