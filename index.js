@@ -10,7 +10,7 @@ const USERNAME = "mostafa";
 const PASSWORD = "azer2020";
 const HOST = "rabbitmq-mostafa.alwaysdata.net";
 const VHOST = "mostafa_rabbitmq";
-const RABBIT_URL = `amqp://${USERNAME}:${PASSWORD}@${HOST}/${VHOST}`;
+const RABBIT_URL = `amqps://${USERNAME}:${PASSWORD}@${HOST}/${VHOST}`;
 const QUEUE = "order_created";
 
 let channel;
